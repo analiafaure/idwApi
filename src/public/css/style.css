@@ -1,0 +1,27 @@
+.contenedorFlex{
+    display: flex;
+    
+    padding: 5px;
+    margin: 1%;
+}
+
+.imgLogo{
+    height: 80px;
+    width: 80px;
+    
+}
+.tituloPrincipal{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+.lista{
+    display: flex;
+    justify-content: stretch;
+    list-style: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+    background-color:darkgrey;
+}
+li{
+    margin-right: 5em;
+}
