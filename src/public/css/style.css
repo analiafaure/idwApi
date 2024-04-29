@@ -1,6 +1,5 @@
 .contenedorFlex{
     display: flex;
-    
     padding: 5px;
     margin: 1%;
 }
@@ -20,8 +19,9 @@
     list-style: none;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     align-items: center;
-    background-color:darkgrey;
+    background-color:rgb(191, 208, 216);
+    border-radius: 5px;
 }
 li{
-    margin-right: 5em;
+    margin-right: 7em;
 }
