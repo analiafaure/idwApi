@@ -1,0 +1,184 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+}
+
+.logo img {
+    width: 50px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+    border-radius:100%
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: #555;
+}
+
+.navbar h2{
+    color: aliceblue;
+ }
+
+ .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.footer .logo img {
+    width: 50px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+}
+
+.footer .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer .menu li {
+    margin-right: 20px;
+}
+
+.footer .menu li:last-child {
+    margin-right: 0;
+}
+
+.footer .menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer .menu li a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.logo h3{
+    color:#fc5474;
+    font-family: monospace;
+    padding-left: 20px;
+}
+.logo{
+    
+    display: flex;
+    
+    
+}
+
+.contact img{
+    width: 100%;
+    height: 300px; 
+    
+}
+
+
+
+form {
+    width: 500px; /* Ancho del formulario */
+    margin: 0 auto; /* Centrar el formulario horizontalmente */
+    padding: 20px; /* Espacio interno del formulario */
+    
+}
+
+/* Estilos para las etiquetas de los campos */
+label {
+    display: block; /* Mostrar las etiquetas en una nueva línea */
+    margin-bottom: 5px; /* Espacio inferior */
+    font-family: monospace;
+    font-size: 15px;
+    color: grey;
+
+}
+
+/* Estilos para el formulario */
+form {
+    width: 80%; /* Ancho del formulario (80% del ancho del contenedor padre) */
+    max-width: 800px; /* Ancho máximo del formulario */
+    margin: 90px; /* Centrar horizontalmente */
+    margin-left: 200px;
+    padding: 20px; /* Espacio interno */
+    box-sizing: border-box; /* Incluir el relleno y el borde en el tamaño total */
+}
+
+/* Estilos para las etiquetas de los campos */
+label {
+    display: block; /* Mostrar en una nueva línea */
+    font-weight: bold; /* Texto en negrita */
+    margin-bottom: 5px; /* Espacio inferior */
+}
+
+/* Estilos para los campos de entrada y textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Ancho completo */
+    padding: 8px; /* Espacio interno */
+    margin-bottom: 10px; /* Espacio inferior */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 3px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluir el relleno y el borde en el tamaño total */
+    background-color: #d3d3d3;
+}
+
+/* Estilos para el botón de enviar */
+input[type="submit"] {
+    width: 40%; /* Ancho completo */
+    margin:0 auto ; /* Centrar horizontalmente */
+    padding: 10px; /* Espacio interno */
+    background-color: #fc5474; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 3px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor apuntador */
+}
+
+/* Estilos para el botón de enviar al pasar el ratón */
+input[type="submit"]:hover {
+    background-color:  #fc6984; /* Color de fondo al pasar el ratón */}
+    form {
+        float: left;
+        width: 50%; /* Ajusta el ancho del formulario según tu diseño */
+    }
+
+.iconos{
+    display: flex;
+    padding-top:130px ;
+    
+}
+
+.direccion{
+    font-family: monospace;
+}
