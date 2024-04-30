@@ -1,27 +1,42 @@
+.contenedor{
+    background-color: #bdc3c7;
+    background-image: linear-gradient(160deg, #bdc3c7 0%, #2c3e50 100%);
+}
 .contenedorFlex{
     display: flex;
     padding: 5px;
     margin: 1%;
+    align-items: center;
+    
+    width: auto;
+    
 }
 
 .imgLogo{
     height: 80px;
     width: 80px;
-    
 }
 .tituloPrincipal{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   
+    font-size: 2.5em;
+    color: white;   
 }
 .lista{
     display: flex;
-    justify-content: stretch;
+    justify-content: space-around;
     list-style: none;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    
+    color: white;
+    font-size: 1.2em;
     align-items: center;
-    background-color:rgb(191, 208, 216);
-    border-radius: 5px;
+}
+.backimg{
+    width: 100px;
+    height: 20px;
 }
 li{
     margin-right: 7em;
+   
 }

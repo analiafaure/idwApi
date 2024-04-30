@@ -19,6 +19,7 @@ app.get('/edit', (req,res) => {
 
 app.use(express.static(join(__dirname, 'public')));
 
+
 // Manejo de errores
 app.use((err, req, res, next) => {
   console.error(err.stack);
