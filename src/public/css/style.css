@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+main {
+    padding: 50px
+}
+
 body {
     font-family: 'Quicksand', sans-serif;
     color: #0C3B5A;
@@ -32,12 +36,17 @@ nav ul {
     list-style-type: none;
 }
 
-nav ul li a {
+nav ul li a,
+a {
     text-decoration: none;
 }
 
 nav ul li a:hover {
     color: #1A84CB;
+}
+
+nav ul li a:visiter {
+    color: #0c3b5a;
 }
 
 .listItem {
@@ -47,6 +56,10 @@ nav ul li a:hover {
     font-size: 18px;
 }
 
+.info {
+    text-align: center;
+    margin: 20px;
+}
 
 .contenedor {
     display:flex;
@@ -59,6 +72,23 @@ nav ul li a:hover {
 	height: 250px;
 	object-fit: cover;
     margin-left: 20px;
+}
 
-}    
+button {
+    background-color: #1A84CB;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
 
+footer {
+    height: 80px;
+    width: 100%;
+    background-color: #0c3b5a;
+    color: #fff;
+    display: flex;
+    margin-top: auto;
+    align-items: center;
+    justify-content: center;
+}
