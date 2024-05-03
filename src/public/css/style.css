@@ -46,3 +46,19 @@ nav ul li a:hover {
     font-weight: bold;
     font-size: 18px;
 }
+
+
+.contenedor {
+    display:flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.img-normalizada{
+	width: 250px;
+	height: 250px;
+	object-fit: cover;
+    margin-left: 20px;
+
+}    
+
