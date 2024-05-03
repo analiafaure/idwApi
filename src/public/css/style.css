@@ -1,0 +1,48 @@
+/* COLORES */
+/* oscuro */
+/* #0C3B5A */
+/* claro */
+/* #1A84CB */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: #0C3B5A;
+}
+
+header {
+    height: 60px;
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px -6px #6c6c6c;
+}
+
+.logo:hover {
+    transform: scale(1.01);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #1A84CB;
+}
+
+.listItem {
+    float: left;
+    margin: auto 40px;
+    font-weight: bold;
+    font-size: 18px;
+}
