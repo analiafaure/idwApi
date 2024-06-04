@@ -44,14 +44,11 @@ nav ul {
 nav ul li a,
 a {
   text-decoration: none;
+  color: #0c3b5a;
 }
 
 nav ul li a:hover {
   color: #1A84CB;
-}
-
-nav ul li a:visiter {
-  color: #0c3b5a;
 }
 
 .listItem {

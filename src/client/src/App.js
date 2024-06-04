@@ -6,6 +6,8 @@ import Navbar from './components/Navbar';
 import Contacto from './components/Contacto';
 import Footer from './components/Footer';
 import Nosotros from './components/Nosotros';
+import AddAlojamiento from './components/AddAlojamiento';
+import AddTipoAlojamiento from './components/AddTipoAlojamiento';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/nosotros" element={<Nosotros />} />
+          <Route path = "/tipoAlojamiento" element = {<AddTipoAlojamiento />} />
+          <Route path = "/alojamiento" element = {<AddAlojamiento />} />
         </Routes>
         <Footer/>
       </div>
