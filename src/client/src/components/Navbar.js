@@ -5,18 +5,18 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <header>
-        <div class="logo">
+        <div className="logo">
             <a href="">
                 <img src={logoCompleto} alt="alojAR logo" height="40"/>
             </a> 
         </div>
-        <nav class="navbar">
+        <nav className="navbar">
             <ul>
-                <li class="listItem"><Link to="/">Home</Link></li>
-                <li class="listItem"><Link to="/nosotros">Nosotros</Link></li>
-                <li class="listItem"><Link to="/contacto">Contacto</Link></li>
-                <li class="listItem"><Link to="/tipoAlojamiento">Tipo Alojamiento</Link></li>
-                <li class="listItem"><Link to="/alojamiento">Alojamiento</Link></li>
+                <li className="listItem"><Link to="/">Home</Link></li>
+                <li className="listItem"><Link to="/tipoAlojamiento">Administrar tipos</Link></li>
+                <li className="listItem"><Link to="/nosotros">Nosotros</Link></li>
+                <li className="listItem"><Link to="/contacto">Contacto</Link></li>
+                {/* <li className="listItem"><Link to="/nuevo-alojamiento">Nuevo alojamiento</Link></li> */}
             </ul>
         </nav>
     </header>

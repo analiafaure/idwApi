@@ -4,7 +4,7 @@ const dbConnection = require('../config/dbConfig');
 exports.getAllTiposAlojamiento = async (req, res) => {
   try {
     const connection = await dbConnection.getConnection();
-    const [rows] = await connection.query('SELECT * FROM  tiposAlojamiento');
+    const [rows] = await connection.query('SELECT * FROM  tiposalojamiento');
     connection.release();
     res.json(rows);
   } catch (error) {
@@ -26,7 +26,7 @@ exports.getTipoAlojamientoById = async (req, res) => {
 };
 
 // Crear un nuevo tipo de alojamiento
-exports. createTipoAlojamiento = async (req, res) => {
+exports.createTipoAlojamiento = async (req, res) => {
   console.log('jsjs');
   try {
     const nuevoTipoAlojamiento = req.body;

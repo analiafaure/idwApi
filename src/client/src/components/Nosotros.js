@@ -1,29 +1,34 @@
 import React from 'react'
-import persona from '../assets/img/persona.png'
+
 const Nosotros = () => {
   return (
-    <div>
+    <div className='d-flex flex-column justify-content-center align-items-center mt-5'>
         <h1>Sobre nosotros...</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu tincidunt libero, vitae laoreet nibh. Pellentesque non fermentum est. Aliquam ultricies facilisis ante eu consequat. Nunc convallis nulla vitae augue mattis efficitur. Vivamus at malesuada diam. Quisque convallis magna vel lectus rhoncus auctor. Cras sed ante nec nulla rutrum varius.Nulla aliquet convallis bibendum. Morbi tristique scelerisque tempus. Fusce convallis nisi id risus aliquam, sed vulputate velit fermentum. Sed sit amet nisl a nulla volutpat rutrum id vitae arcu. Morbi aliquet posuere fermentum. Proin vel fermentum urna. Aenean a dolor ipsum. In a est tellus. Etiam eleifend diam vitae enim rutrum aliquet. Nullam id quam quis diam vehicula mollis. Donec viverra metus nec augue aliquam tristique. Suspendisse sed ligula malesuada mi porttitor dictum. Cras eros quam, tempus nec elementum nec, tristique congue mi. Fusce iaculis ex id odio feugiat, nec egestas diam mattis. Pellentesque hendrerit nulla vel vehicula lobortis.</p>
-        
+        <p>Somos 3 amigos que nos encanta viajar y conocer nuevos lugares,</p>
+        <p>pero siempre a donde vamos nos gusta sentirnos como en casa</p>
+        <p>por eso creamos Alojar, para que </p>
+        <p><i>aunque estés lejos...te sientas como en casa!</i></p>
+
         <h1>Nuestro equipo</h1>
-        <section class="contenedor">
-            <div class="empleado">
-                <img src={persona} alt="empleado" height="100"/>
-                <p>Nombre: Juanito Perez</p>
-                <p>Puesto: </p>
+        <div className="contenedor" style={{width:'700px'}}>
+            <div className="empleado">
+                <img src="https://i.pinimg.com/564x/64/70/74/647074f774e3d5719463a10c77095661.jpg" alt="empleado" height="100"/>
+                <p>Nombre: Juan Perez</p>
+                <p>Puesto: CEO </p>
             </div>
-            <div>
-                <img src={persona} alt="empleado" height="100"/>
-                <p>Nombre: Juanito Perez</p>
-                <p>Puesto: </p>
+
+            <div className="empleado"> 
+                <img src="https://i.pinimg.com/564x/a6/05/b8/a605b8145c79e5d2790f1859a604d758.jpg" alt="empleado" height="100"/>
+                <p>Nombre: Jorge Martinez</p>
+                <p>Puesto: Economista </p>
             </div>
-            <div>
-                <img src={persona} alt="empleado" height="100"/>
-                <p>Nombre: Juanito Perez</p>
-                <p>Puesto: </p>
+
+            <div className="empleado"> 
+                <img src="https://i.pinimg.com/564x/31/6e/8a/316e8af79c903c8f43244e9850239c8d.jpg" alt="empleado" height="100"/>
+                <p>Nombre: José Rodriguez</p>
+                <p>Puesto: Analista </p>
             </div>
-        </section>
+        </div>
     </div>
   )
 }

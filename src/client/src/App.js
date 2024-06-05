@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Nosotros from './components/Nosotros';
 import AddAlojamiento from './components/AddAlojamiento';
 import AddTipoAlojamiento from './components/AddTipoAlojamiento';
+import Busqueda from './components/Busqueda';
 
 function App() {
   return (
@@ -18,8 +19,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/nosotros" element={<Nosotros />} />
+          <Route path="/busqueda" element={<Busqueda />} />
           <Route path = "/tipoAlojamiento" element = {<AddTipoAlojamiento />} />
-          <Route path = "/alojamiento" element = {<AddAlojamiento />} />
+          {/* <Route path = "/nuevo-alojamiento" element = {<AddAlojamiento />} /> */}
         </Routes>
         <Footer/>
       </div>

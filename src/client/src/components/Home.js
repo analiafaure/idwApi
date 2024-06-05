@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -10,31 +11,27 @@ const Home = () => {
             </div>
         </section>
 
-        <section class="contenedor">
-            <div class="img">
-                <img src="https://cf.bstatic.com/xdata/images/hotel/max500/511545115.jpg?k=422b9400a302d6a16cec9d2c15bcb4497c943fb58e8eefce47a32cd834467670&o="  alt="hoteles" class="img-normalizada" />
+        <section className="contenedor">
+            <Link to='/busqueda' className="typeImg">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max500/511545115.jpg?k=422b9400a302d6a16cec9d2c15bcb4497c943fb58e8eefce47a32cd834467670&o="  alt="hoteles" className="img-normalizada" />
                 <h2>Hoteles</h2>
-                <button> Buscar!</button>
-            </div>
+            </Link>
             
         
-            <div class="img">
-                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/f6/76/db/cabanas-cumelen.jpg?w=700&h=-1&s=1" alt="cabañas" class="img-normalizada"/>
+            <Link to='/busqueda' className="typeImg">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/f6/76/db/cabanas-cumelen.jpg?w=700&h=-1&s=1" alt="cabañas" className="img-normalizada"/>
                     <h2>Cabañas</h2>
-                    <button> Buscar!</button>
-            </div>
+            </Link>
         
-            <div class="img">
-                <img src="https://casa-web.com.ar/wp-content/uploads/2013/09/decoracion-tonos-claros-para-departamento-chico.jpg"  alt="departamentos" class="img-normalizada" />
+            <Link to='/busqueda' className="typeImg">
+                <img src="https://casa-web.com.ar/wp-content/uploads/2013/09/decoracion-tonos-claros-para-departamento-chico.jpg"  alt="departamentos" className="img-normalizada" />
                 <h2>Departamentos</h2> 
-                <button> Buscar!</button>
-            </div>
+            </Link>
     
-            <div class="img">
-                <img src="https://domosgeodesicos.files.wordpress.com/2021/07/img_5365-edited.jpg?w=1024" alt="domos" class="img-normalizada" />
+            <Link to='/busqueda' className="typeImg">
+                <img src="https://domosgeodesicos.files.wordpress.com/2021/07/img_5365-edited.jpg?w=1024" alt="domos" className="img-normalizada" />
                 <h2>Domos</h2>
-                <button> Buscar!</button>
-            </div>
+            </Link>
         </section>
     </div>
   )
