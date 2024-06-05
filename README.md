@@ -47,7 +47,7 @@ npm run dev
 
 - `DELETE /tiposAlojamiento/deleteTipoAlojamiento/:id`: Elimina un tipo de alojamiento existente.
   - Parámetros de la solicitud: `ID del tipo de alojamiento`
-  - Respuesta exitosa: `204 No Content`
+  - Respuesta exitosa: `200 No Content`
 
 ## ALOJAMIENTOS
 
@@ -147,7 +147,7 @@ npm run dev
 
 - `DELETE /alojamiento/deleteAlojamiento/:id`: Elimina un alojamiento existente.
   - Parámetros de la solicitud: `ID del alojamiento`
-  - Respuesta exitosa: `204 No Content`
+  - Respuesta exitosa: `200 No Content`
 
 
 
