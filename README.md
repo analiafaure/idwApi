@@ -47,7 +47,7 @@ npm run dev
 
 - `DELETE /tiposAlojamiento/deleteTipoAlojamiento/:id`: Elimina un tipo de alojamiento existente.
   - Parámetros de la solicitud: `ID del tipo de alojamiento`
-  - Respuesta exitosa: `204 No Content`
+  - Respuesta exitosa: `200 No Content`
 
 ## ALOJAMIENTOS
 
@@ -62,11 +62,11 @@ npm run dev
         "TipoAlojamiento": 1,
         "Latitud": 123.456,
         "Longitud": -78.901,
-        "Precio por día": 100,
-        "Cantidad de dormitorios": 3,
-        "Cantidad de baños": 2,
+        "PrecioPorDia": 100,
+        "CantidadDormitorios": 3,
+        "CantidadBanios": 2,
         "Estado": "Disponible"
-    }
+     }
     ```
   - Respuesta exitosa: `200 OK`
   - Ejemplo de respuesta: 
@@ -78,9 +78,9 @@ npm run dev
         "TipoAlojamiento": 1,
         "Latitud": 123.456,
         "Longitud": -78.901,
-        "Precio por día": 100,
-        "Cantidad de dormitorios": 3,
-        "Cantidad de baños": 2,
+        "PrecioPorDia": 100,
+        "CantidadDormitorios": 3,
+        "CantidadBanios": 2,
         "Estado": "Disponible"
     }
     ```
@@ -97,9 +97,9 @@ npm run dev
         "TipoAlojamiento": 1,
         "Latitud": 123.456,
         "Longitud": -78.901,
-        "Precio por día": 100,
-        "Cantidad de dormitorios": 3,
-        "Cantidad de baños": 2,
+        "PrecioPorDia": 100,
+        "CantidadDormitorios": 3,
+        "CantidadBanios": 2,
         "Estado": "Disponible"
     }
     ```
@@ -114,21 +114,21 @@ npm run dev
         "TipoAlojamiento": 1,
         "Latitud": 123.456,
         "Longitud": -78.901,
-        "Precio por día": 100,
-        "Cantidad de dormitorios": 3,
-        "Cantidad de baños": 2,
+        "PrecioPorDia": 100,
+        "CantidadDormitorios": 3,
+        "CantidadBanios": 2,
         "Estado": "Disponible"
     },
     {
         "idAlojamiento": 2,
         "Titulo": "Ejemplo de alojamiento",
         "Descripción": "Descripción del alojamiento",
-        "TipoAlojamiento": 2,
+        "TipoAlojamiento": 1,
         "Latitud": 123.456,
         "Longitud": -78.901,
-        "Precio por día": 100,
-        "Cantidad de dormitorios": 3,
-        "Cantidad de baños": 2,
+        "PrecioPorDia": 100,
+        "CantidadDormitorios": 3,
+        "CantidadBanios": 2,
         "Estado": "Disponible"
     }
     ```
@@ -147,7 +147,7 @@ npm run dev
 
 - `DELETE /alojamiento/deleteAlojamiento/:id`: Elimina un alojamiento existente.
   - Parámetros de la solicitud: `ID del alojamiento`
-  - Respuesta exitosa: `204 No Content`
+  - Respuesta exitosa: `200 No Content`
 
 
 
