@@ -103,7 +103,7 @@ npm run dev
         "Estado": "Disponible"
     }
     ```
-- `GET /alojamiento/getAlojamiento`: Obtiene todos los alojamientos.
+- `GET /alojamiento/getAlojamientos`: Obtiene todos los alojamientos.
   - Respuesta exitosa: `200 OK`
   - Ejemplo de respuesta: 
     ```json
