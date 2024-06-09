@@ -154,29 +154,29 @@ npm run dev
 - **Crea un nuevo servicio:**
   - Método: `POST`
   - Ruta: `/servicio/createServicio`
-  - Parámetros de la solicitud: `{ "Descripcion": "wifi" }`
+  - Parámetros de la solicitud: `{ "Nombre": "wifi" }`
   - Respuesta exitosa: `200 OK`
-  - Ejemplo de respuesta: `{ "id": 1, "Descripcion": "wifi" }`
+  - Ejemplo de respuesta: `{ "id": 1, "Nombre": "wifi" }`
 
 - **Obtiene un servicio por su ID:**
   - Método: `GET`
   - Ruta: `/servicio/getServicio/:id`
   - Parámetros de la solicitud: `ID del servicio`
   - Respuesta exitosa: `200 OK`
-  - Ejemplo de respuesta: `{ "id": 1, "Descripcion": "wifi" }`
+  - Ejemplo de respuesta: `{ "id": 1, "Nombre": "wifi" }`
 
 - **Obtiene todos los servicios:**
   - Método: `GET`
   - Ruta: `/servicio/getAllServicios`
   - Respuesta exitosa: `200 OK`
-  - Ejemplo de respuesta: `{ "id": 1, "Descripcion": "wifi",  "id": 2, "Descripcion": "piscina" }`
+  - Ejemplo de respuesta: `{ "id": 1, "Nombre": "wifi",  "id": 2, "Nombre": "piscina" }`
  
 - **Actualiza un servicio existente:**
   - Método: `PUT`
   - Ruta: `/servicio/updateServicio/:id`
   - Parámetros de la solicitud: `ID del servicio`, datos a actualizar
   - Respuesta exitosa: `200 OK`
-  - Ejemplo de solicitud: `PUT /servicio/updateServicio/1` con cuerpo `{ "Descripcion": "wifi" }`
+  - Ejemplo de solicitud: `PUT /servicio/updateServicio/1` con cuerpo `{ "Nombre": "wifi" }`
 
 - **Elimina un servicio existente:**
   - Método: `DELETE`
