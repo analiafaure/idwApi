@@ -149,8 +149,192 @@ npm run dev
   - Parámetros de la solicitud: `ID del alojamiento`
   - Respuesta exitosa: `200 No Content`
 
+## SERVICIOS
 
+- **Crea un nuevo servicio:**
+  - Método: `POST`
+  - Ruta: `/servicio/createServicio`
+  - Parámetros de la solicitud: `{ "Descripcion": "wifi" }`
+  - Respuesta exitosa: `200 OK`
+  - Ejemplo de respuesta: `{ "id": 1, "Descripcion": "wifi" }`
 
+- **Obtiene un servicio por su ID:**
+  - Método: `GET`
+  - Ruta: `/servicio/getServicio/:id`
+  - Parámetros de la solicitud: `ID del servicio`
+  - Respuesta exitosa: `200 OK`
+  - Ejemplo de respuesta: `{ "id": 1, "Descripcion": "wifi" }`
+
+- **Obtiene todos los servicios:**
+  - Método: `GET`
+  - Ruta: `/servicio/getAllServicios`
+  - Respuesta exitosa: `200 OK`
+  - Ejemplo de respuesta: `{ "id": 1, "Descripcion": "wifi",  "id": 2, "Descripcion": "piscina" }`
+ 
+- **Actualiza un servicio existente:**
+  - Método: `PUT`
+  - Ruta: `/servicio/updateServicio/:id`
+  - Parámetros de la solicitud: `ID del servicio`, datos a actualizar
+  - Respuesta exitosa: `200 OK`
+  - Ejemplo de solicitud: `PUT /servicio/updateServicio/1` con cuerpo `{ "Descripcion": "wifi" }`
+
+- **Elimina un servicio existente:**
+  - Método: `DELETE`
+  - Ruta: `/servicio/deleteServicio/:id`
+  - Parámetros de la solicitud: `ID del servicio`
+  - Respuesta exitosa: `200 No Content`
+ 
+## ALOJAMIENTOS Y SERVICIOS
+
+- **Obtiene todos los alojamientos con sus servicios asociados:**
+  - Método: `GET`
+  - Ruta: `/alojamientosServicios/getAllAlojamientosServicios`
+  - Respuesta exitosa: `200 OK`
+  - Ejemplo de respuesta: 
+    ```json
+    [
+        {
+            "idAlojamientoServicio": 1,
+            "idAlojamiento": 1,
+            "idServicio": 1
+        },
+        {
+            "idAlojamientoServicio": 2,
+            "idAlojamiento": 2,
+            "idServicio": 2
+        }
+    ]
+    ```
+
+- **Obtiene un alojamiento con sus servicios asociados por su ID:**
+  - Método: `GET`
+  - Ruta: `/alojamientosServicios/getAlojamientosServicios/:id`
+  - Parámetros de la solicitud: `ID del alojamiento`
+  - Respuesta exitosa: `200 OK`
+  - Ejemplo de respuesta: 
+    ```json
+    {
+        "idAlojamientoServicio": 1,
+        "idAlojamiento": 1,
+        "idServicio": 1
+    }
+    ```
+
+- **Crea una nueva relación entre alojamiento y servicio:**
+  - Método: `POST`
+  - Ruta: `/alojamientosServicios/createAlojamientosServicio`
+  - Parámetros de la solicitud: 
+    ```json
+    {
+        "idAlojamiento": 1,
+        "idServicio": 1
+    }
+    ```
+  - Respuesta exitosa: `200 OK`
+  - Ejemplo de respuesta: 
+    ```json
+    {
+        "idAlojamientoServicio": 1,
+        "idAlojamiento": 1,
+        "idServicio": 1
+    }
+    ```
+
+- **Actualiza una relación entre alojamiento y servicio existente por su ID:**
+  - Método: `PUT`
+  - Ruta: `/alojamientosServicios/updateAlojamientosServicio/:id`
+  - Parámetros de la solicitud: `ID de la relación`, datos a actualizar
+  - Respuesta exitosa: `200 OK`
+  - Ejemplo de solicitud: `PUT /alojamientoServicios/updateAlojamientoServicio/1` con cuerpo: 
+    ```json
+    {
+        "idAlojamiento": 2,
+        "idServicio": 1
+    }
+    ```
+
+- **Elimina una relación entre alojamiento y servicio por su ID:**
+  - Método: `DELETE`
+  - Ruta: `/alojamientosServicios/deleteAlojamientosServicio/:id`
+  - Parámetros de la solicitud: `ID de la relación`
+  - Respuesta exitosa: `200 No Content`
+
+## IMAGENES
+
+- **Obtiene todas las imágenes:**
+  - Método: `GET`
+  - Ruta: `/imagen/getAllImagenes`
+  - Respuesta exitosa: `200 OK`
+  - Ejemplo de respuesta: 
+    ```json
+    [
+        {
+            "idImagen": 1,
+            "idAlojamiento": 1,
+            "RutaArchivo": "/ruta/archivo1.jpg"
+        },
+        {
+            "idImagen": 2,
+            "idAlojamiento": 1,
+            "RutaArchivo": "/ruta/archivo2.jpg"
+        }
+    ]
+    ```
+
+- **Obtiene una imagen por su ID:**
+  - Método: `GET`
+  - Ruta: `/imagen/getImagen/:id`
+  - Parámetros de la solicitud: `ID de la imagen`
+  - Respuesta exitosa: `200 OK`
+  - Ejemplo de respuesta: 
+    ```json
+    {
+        "idImagen": 1,
+        "idAlojamiento": 1,
+        "RutaArchivo": "/ruta/archivo1.jpg"
+    }
+    ```
+
+- **Crea una nueva imagen:**
+  - Método: `POST`
+  - Ruta: `/imagen/createImagen`
+  - Parámetros de la solicitud: 
+    ```json
+    {
+        "idAlojamiento": 1,
+        "RutaArchivo": "/ruta/archivo3.jpg"
+    }
+    ```
+  - Respuesta exitosa: `200 OK`
+  - Ejemplo de respuesta: 
+    ```json
+    {
+        "idImagen": 3,
+        "idAlojamiento": 1,
+        "RutaArchivo": "/ruta/archivo3.jpg"
+    }
+    ```
+
+- **Actualiza una imagen existente por su ID:**
+  - Método: `PUT`
+  - Ruta: `/imagen/updateImagen/:id`
+  - Parámetros de la solicitud: `ID de la imagen`, datos a actualizar
+  - Respuesta exitosa: `200 OK`
+  - Ejemplo de solicitud: `PUT /imagen/updateImagen/1` con cuerpo: 
+    ```json
+    {
+        "idAlojamiento": 2,
+        "RutaArchivo": "/ruta/archivo1_actualizado.jpg"
+    }
+    ```
+
+- **Elimina una imagen por su ID:**
+  - Método: `DELETE`
+  - Ruta: `/imagen/deleteImagen/:id`
+  - Parámetros de la solicitud: `ID de la imagen`
+  - Respuesta exitosa: `200 No Content`
+
+ 
 ## Errores
 
 - `400 Bad Request`: La solicitud contiene datos incorrectos o incompletos.
