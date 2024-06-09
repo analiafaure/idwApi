@@ -50,7 +50,7 @@ function App() {
             <li><Link to="/hotels">Alojamientos</Link></li>
             <li><Link to="/img">Imagenes</Link></li>
             <li><Link to="/tipoAlojamiento">tipo alojamiento</Link></li>
-            <li><Link to="/alojamientos">Lista alojamientos</Link></li>//agregar
+            <li><Link to="/alojamientos">Lista alojamientos</Link></li>
           </ul>
         </nav>
         <main>
@@ -58,7 +58,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/hotels" element={<AddHotelForm />} />
             <Route path='/tipoAlojamiento' element={<AddTipoAlojamiento />} />
-            <Route path='/alojamientos' element={<Alojamientos />} />//agregar
+            <Route path='/alojamientos' element={<Alojamientos />} />
           </Routes>
         </main>
        <Footer/>
