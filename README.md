@@ -156,20 +156,20 @@ npm run dev
   - Ruta: `/servicio/createServicio`
   - Parámetros de la solicitud: `{ "Nombre": "wifi" }`
   - Respuesta exitosa: `200 OK`
-  - Ejemplo de respuesta: `{ "id": 1, "Nombre": "wifi" }`
+  - Ejemplo de respuesta: `{ "idServicio": 1, "Nombre": "wifi" }`
 
 - **Obtiene un servicio por su ID:**
   - Método: `GET`
   - Ruta: `/servicio/getServicio/:id`
   - Parámetros de la solicitud: `ID del servicio`
   - Respuesta exitosa: `200 OK`
-  - Ejemplo de respuesta: `{ "id": 1, "Nombre": "wifi" }`
+  - Ejemplo de respuesta: `{ "idServicio": 1, "Nombre": "wifi" }`
 
 - **Obtiene todos los servicios:**
   - Método: `GET`
   - Ruta: `/servicio/getAllServicios`
   - Respuesta exitosa: `200 OK`
-  - Ejemplo de respuesta: `{ "id": 1, "Nombre": "wifi",  "id": 2, "Nombre": "piscina" }`
+  - Ejemplo de respuesta: `{ "idServicio": 1, "Nombre": "wifi",  "idServicio": 2, "Nombre": "piscina" }`
  
 - **Actualiza un servicio existente:**
   - Método: `PUT`
