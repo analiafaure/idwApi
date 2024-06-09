@@ -140,7 +140,7 @@ npm run dev
     ```json
     {
         "Titulo": "Nuevo título",
-        "Precio por día": 120,
+        "PrecioPorDia": 120,
         "Estado": "Reservado"
     }
     ```
