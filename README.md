@@ -188,7 +188,7 @@ npm run dev
 
 - **Obtiene todos los alojamientos con sus servicios asociados:**
   - Método: `GET`
-  - Ruta: `/alojamientosServicios/getAllAlojamientosServicios`
+  - Ruta: `/alojamientosServicios/getAllAlojamientoServicios`
   - Respuesta exitosa: `200 OK`
   - Ejemplo de respuesta: 
     ```json
@@ -208,7 +208,7 @@ npm run dev
 
 - **Obtiene un alojamiento con sus servicios asociados por su ID:**
   - Método: `GET`
-  - Ruta: `/alojamientosServicios/getAlojamientosServicios/:id`
+  - Ruta: `/alojamientosServicios/getAlojamientoServicio/:id`
   - Parámetros de la solicitud: `ID del alojamiento`
   - Respuesta exitosa: `200 OK`
   - Ejemplo de respuesta: 
@@ -222,7 +222,7 @@ npm run dev
 
 - **Crea una nueva relación entre alojamiento y servicio:**
   - Método: `POST`
-  - Ruta: `/alojamientosServicios/createAlojamientosServicio`
+  - Ruta: `/alojamientosServicios/createAlojamientoServicio`
   - Parámetros de la solicitud: 
     ```json
     {
@@ -242,7 +242,7 @@ npm run dev
 
 - **Actualiza una relación entre alojamiento y servicio existente por su ID:**
   - Método: `PUT`
-  - Ruta: `/alojamientosServicios/updateAlojamientosServicio/:id`
+  - Ruta: `/alojamientosServicios/updateAlojamientoServicio/:id`
   - Parámetros de la solicitud: `ID de la relación`, datos a actualizar
   - Respuesta exitosa: `200 OK`
   - Ejemplo de solicitud: `PUT /alojamientoServicios/updateAlojamientoServicio/1` con cuerpo: 
@@ -255,7 +255,7 @@ npm run dev
 
 - **Elimina una relación entre alojamiento y servicio por su ID:**
   - Método: `DELETE`
-  - Ruta: `/alojamientosServicios/deleteAlojamientosServicio/:id`
+  - Ruta: `/alojamientosServicios/deleteAlojamientoServicio/:id`
   - Parámetros de la solicitud: `ID de la relación`
   - Respuesta exitosa: `200 No Content`
 
