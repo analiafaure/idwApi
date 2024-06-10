@@ -27,7 +27,6 @@ exports.getTipoAlojamientoById = async (req, res) => {
 
 // Crear un nuevo tipo de alojamiento
 exports. createTipoAlojamiento = async (req, res) => {
-  console.log('jsjs');
   try {
     const nuevoTipoAlojamiento = req.body;
     console.log('ingresa');
