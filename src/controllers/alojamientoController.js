@@ -17,7 +17,7 @@ exports.getAlojamientoById = async (req, res) => {
   try {
     const { id } = req.params;
     const connection = await dbConnection.getConnection();
-    const [rows] = await connection.query('SELECT * FROM Alojamiento WHERE idAlojamiento = ?', [id]);
+    const [rows] = await connection.query('SELECT * FROM Alojamientos WHERE idAlojamiento = ?', [id]);
     connection.release();
     res.json(rows[0]);
   } catch (error) {
