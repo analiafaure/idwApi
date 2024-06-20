@@ -3,6 +3,9 @@ const router = express.Router();
 const alojamientoServicioController = require('../controllers/alojamientosServiciosController');
 
 // Ruta para obtener todos los alojamientoservicios
+router.get('/getAlojamientoServicios/:idAlojamiento', alojamientoServicioController.getAllAlojamientoServiciosByIdAlojamiento);
+
+// Ruta para obtener todos los alojamientoservicios
 router.get('/getAllAlojamientoServicios', alojamientoServicioController.getAllAlojamientoServicios);
 
 // Ruta para obtener un alojamientoservicio por ID

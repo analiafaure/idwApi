@@ -19,8 +19,22 @@ exports.getAlojamientoServicioById = async (req, res) => {
     const connection = await dbConnection.getConnection();
     const [rows] = await connection.query('SELECT * FROM alojamientoservicios WHERE idAlojamientoServicio = ?', [id]);
     connection.release();
+    res.json(rows);
+  } catch (error) {
+    res.status(500).json({ error: 'Error al obtener los alojamientoservicios' });
+  }
+};
+
+// Obtener todos los alojamientoservicios por idAlojamiento
+exports.getAllAlojamientoServiciosByIdAlojamiento = async (req, res) => {
+  try {
+    const { idAlojamiento } = req.params;
+    const connection = await dbConnection.getConnection();
+    const [rows] = await connection.query('SELECT * FROM alojamientoservicios WHERE idAlojamiento = ?', [idAlojamiento]);
+    connection.release();
     res.json(rows[0]);
   } catch (error) {
+    console.log(error);
     res.status(500).json({ error: 'Error al obtener el alojamientoservicio' });
   }
 };
