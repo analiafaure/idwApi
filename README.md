@@ -204,7 +204,26 @@ npm run dev
             "idServicio": 2
         }
     ]
-    ```
+    ``` 
+  - **Obtiene todos los alojamientos cuyo idAlojamiento coincida con el parámetro del mismo nombre:**
+  - Método: `GET`
+  - Ruta: `/alojamientosServicios//getAlojamientoServicios/:idAlojamiento`
+  - Respuesta exitosa: `200 OK`
+  - Ejemplo de respuesta: 
+    ```json
+    [
+        {
+            "idAlojamientoServicio": 1,
+            "idAlojamiento": 1,
+            "idServicio": 1
+        },
+        {
+            "idAlojamientoServicio": 2,
+            "idAlojamiento": 1,
+            "idServicio": 2
+        }
+    ]
+    ```   
 
 - **Obtiene un alojamiento con sus servicios asociados por su ID:**
   - Método: `GET`
