@@ -205,7 +205,7 @@ npm run dev
         }
     ]
     ``` 
-  - **Obtiene todos los alojamientos cuyo idAlojamiento coincida con el parámetro del mismo nombre:**
+- **Obtiene todos los alojamientos cuyo idAlojamiento coincida con el parámetro del mismo nombre:**
   - Método: `GET`
   - Ruta: `/alojamientosServicios/getAlojamientoServicios/:idAlojamiento`
   - Respuesta exitosa: `200 OK`
