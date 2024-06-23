@@ -207,7 +207,7 @@ npm run dev
     ``` 
   - **Obtiene todos los alojamientos cuyo idAlojamiento coincida con el parámetro del mismo nombre:**
   - Método: `GET`
-  - Ruta: `/alojamientosServicios//getAlojamientoServicios/:idAlojamiento`
+  - Ruta: `/alojamientosServicios/getAlojamientoServicios/:idAlojamiento`
   - Respuesta exitosa: `200 OK`
   - Ejemplo de respuesta: 
     ```json
